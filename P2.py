@@ -1,14 +1,14 @@
-#defino el peso de cada objeto
-peso_payaso = 112 # gramos
-peso_muñeca = 75 # gramos
-#solicito cantidad de muñecas y payasos vendidos con int (valores enteros)
-numero_payasos = int(input("cantidad de payasos vendidos: "))
-numero_munecas = int(input("cantidad de muñecas vendidas: "))
-#calculo el peso total de los payasos
-peso_payasos = numero_payasos * peso_payaso
-#calculo el peso total de las muñecas
-peso_munecas = numero_munecas * peso_muñeca
-#calculo el peso total del paquete
-peso_total = peso_payasos + peso_munecas
-#mostrar el peso total del paquete
-print(f"El peso total del paquete es de : {peso_total} gramos")
+#2
+#defino el porcentaje de propina en eeuu como una constante
+porcentaje_propina = 15
+#solicito el monto de la cuenta
+cuenta = float(input("Ingrese el total de la cuenta:  $"))
+#Calcular la propina
+propina = cuenta*(porcentaje_propina/100)
+#Mostrar monto de la propina
+print(f"El monto de la propina es: ${propina: .2f}")
+#calcular el total con la propina
+total_con_propina = cuenta + propina
+#mostrar el total con propina
+print(f"El total con propina es: ${total_con_propina: .2f}")
+

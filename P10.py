@@ -1,14 +1,9 @@
-#11
-def eliminar_duplicados(lista):
-# Convertir la lista a un conjunto (elimina duplicados)
-  conjunto_sin_duplicados = set(lista)
-  
-  # Convertir el conjunto de vuelta a una lista (ordenada)
-  lista_sin_duplicados = list(conjunto_sin_duplicados)
-  return lista_sin_duplicados
-
-# Ejemplo de uso
-lista_original = [1, 1, 2, 3, 4, 4, 5, 1]
-lista_sin_duplicados = eliminar_duplicados(lista_original)
+#10
+#definir lista
+lista_original = ['Rojo', 'Verde', 'Blanco', 'Negro', 'Rosa', 'Amarillo']
+#posiciones a eliminar
+posiciones_a_eliminar = [0, 4, 5]
+# Crear una nueva lista sin los elementos en las posiciones especificadas
+lista_filtrada = [elemento for i, elemento in enumerate(lista_original) if i not in posiciones_a_eliminar]
 print(f"Lista original: {lista_original}")
-print(f"Lista sin duplicados: {lista_sin_duplicados}")
+print(f"Lista filtrada: {lista_filtrada}")

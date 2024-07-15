@@ -1,18 +1,9 @@
-#6
-#defino el precio de la entrada por edad
-infante = 0
-niños = 5
-adulto = 10
+#5
 #Solicito cantidad de shows vistos
-edad = int(input("¿Cuántos años tiene?: "))
-#calculo precio de etrada por edad
-if edad < 4:
-    precio_entrada = infante
-elif 4 <= edad <= 18:
-    precio_entrada = niños
-else:
-    precio_entrada = adulto
-#mostrar el valor de entrada
-print(f"¿Precio de entrada?: ${precio_entrada}")
+numero_shows_vistos = int(input("¿Cuántos shows has visto en el último año?: "))
+#determinar si ha visto más de 3 shows
+ha_visto_mas_de_3_shows = numero_shows_vistos > 3
+#mostrar el valor de verdad
+print(f"¿Has visto más de 3 shows? {ha_visto_mas_de_3_shows}")
 
 
